@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localizar CEP</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Localiza via CEP</h1>
+    </header>
+    <main id="main">
+        <div class="processo">
+            <input type="text" placeholder="Digite o CEP" id="inputCep" class="caixa">
+            <button onclick="pesquisarCep()" class="botao">Enviar</button>
+        </div>
+        <div class="resultado_container" id="resultadoCont">
+            <h1>Resultado:</h1>
+            <div class="resultado">
+                <div class="ruaResult"><h2>rua:&nbsp;</h2><p id="rua"></p></div>
+                <div class="bairroResult"><h2>bairro:&nbsp;</h2><p id="bairro"></p></div>
+                <div class="cidadeResult"><h2>cidade: &nbsp;</h2><p id="cidade"></p></div>
+                <div class="ufResult"><h2>Estado: &nbsp;</h2><p id="uf"></p></div>
+                <div class="ibgeResult"><h2>IBGE: &nbsp;</h2><p id="ibge"></p></div>
+            </div>
+        </div>
+        <button onclick="mostrarHistorico()" class="btn_historicocont" id="btnHistCont">Visualizar histórico</button>
+        <div class="historico_container" id="historicoContainer">
+            <h1>Historico:</h1>
+            <div class="historico" id="historico">
+                
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="devs_container">
+            <h2>Desenvolvido por:</h2>
+            <div class="devs">
+                <p>Felipe Tomaz</p>
+                <p>Guilherme Ferreira</p>
+                <p>Gustavo Henrique</p>
+                <p>Ryann Barreto</p>
+                <p>2B info</p>
+            </div>
+        </div>
+        <div>
+            <h2>Projeto IW</h2>
+            <div>
+                <p>API viacep</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
